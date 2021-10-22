@@ -1,8 +1,10 @@
 /**
- * Write a description of class Tienda here.
+ * Clase Tienda.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Marco Vinicio Ramirez Centes 21032 
+ * @author Andres Eduardo Quezada Bendana 21085
+ * @author Javier Luis Angel Chavez Escobar 21016
+ * @author Josue Isaac Morales Gonzalez 21116
  */
 public class Tienda{
     private String nombre;
@@ -13,7 +15,7 @@ public class Tienda{
      */
     public Tienda(String nombre, int espacios){
         this.nombre = nombre;
-        this.espacios= espacios;
+        this.espacios = espacios;
     }
     
     /**
@@ -36,6 +38,14 @@ public class Tienda{
      */
     public int espaciosDisponibles(){
         return espacios;
+    }
+    
+    /**
+     * Metodo que libera espacios ocupados cuando las personas se retiran.
+     * @param int personas
+     */
+    public void liberarEspacio(int personas){
+        espacios += personas;
     }
     
 }
